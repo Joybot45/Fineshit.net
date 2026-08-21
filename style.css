@@ -15,8 +15,8 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  font-family: "Chakra Petch", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 
 a { color: inherit; }
@@ -35,7 +35,7 @@ header a { text-decoration: none; }
 
 .site-title {
   font-size: 1.8rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--red);
 }
@@ -134,6 +134,32 @@ article .post-meta {
 
 article p {
   margin-bottom: 1.2rem;
+}
+
+article .link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+
+article .link-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+article .link-list li:last-child {
+  border-bottom: none;
+}
+
+article .link-list a {
+  color: var(--red-soft);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+article .link-list a:hover {
+  color: var(--red);
+  text-decoration: underline;
 }
 
 .back-link {
